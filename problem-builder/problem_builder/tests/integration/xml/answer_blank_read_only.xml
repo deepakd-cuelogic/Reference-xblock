@@ -1,0 +1,5 @@
+<vertical_demo>
+    <problem-builder url_name="answer_blank_read_only" enforce_dependency="false">
+        <pb-answer-recap name="answer_blank" />
+    </problem-builder>
+</vertical_demo>

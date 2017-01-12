@@ -1,0 +1,6 @@
+<vertical_demo>
+    <problem-builder url_name="answer_edit_2" enforce_dependency="false">
+        <pb-answer-recap name="answer_1" />
+        <pb-answer name="answer_1" />
+    </problem-builder>
+</vertical_demo>

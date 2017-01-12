@@ -1,0 +1,13 @@
+{% load i18n %}
+
+<div class="add-xblock-component new-component-item adding">
+  <div class="new-component">
+    <ul class="new-component-type">
+      <li><a href="#" class="single-template add-xblock-component-button" data-category="pb-choice" data-boilerplate="studio_default">{% trans "Add Custom Choice" %}</a></li>
+      <li><a href="#" class="single-template add-xblock-component-button" data-category="pb-tip">{% trans "Add Tip" %}</a></li>
+      {% if show_review %}
+      <li><a href="#" class="single-template add-xblock-component-button" data-category="pb-message" data-boilerplate="on-assessment-review-question">{% trans "Message (Review)" %}</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

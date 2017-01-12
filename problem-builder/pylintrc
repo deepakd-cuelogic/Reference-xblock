@@ -1,0 +1,11 @@
+[MASTER]
+ignore=problem_builder/migrations
+
+[REPORTS]
+reports=no
+
+[FORMAT]
+max-line-length=120
+
+[MESSAGES CONTROL]
+disable=invalid-name

@@ -1,0 +1,7 @@
+<div
+   class="tip"
+   {% if width %}data-width="{{width}}"{% endif %}
+   {% if height %}data-height="{{height}}"{% endif %}
+   >
+   <p>{{ content|safe }}</p>
+</div>

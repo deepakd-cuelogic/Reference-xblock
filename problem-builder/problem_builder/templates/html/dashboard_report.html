@@ -1,0 +1,39 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <style>
+      body {
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      .pb-dashboard table {
+          text-align: left;
+      }
+      /* screen reader class from edx-platform */
+      .sr {
+        border: 0;
+        clip: rect(1px 1px 1px 1px);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      {{css}}
+    </style>
+  </head>
+  <body>
+    <div class="pb-dashboard">
+      <div class="identification">
+        {% if student_name %}{% trans "Student" %}: {{student_name}}<br>{% endif %}
+        {% if course_name %}{% trans "Course" %}: {{course_name}}<br>{% endif %}
+        {% trans "Date" %}: {% now "DATE_FORMAT" %}<br>
+      </div>
+      REPORT_GOES_HERE
+    </div>
+  </body>
+</html>
