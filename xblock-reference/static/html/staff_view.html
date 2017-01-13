@@ -1,0 +1,50 @@
+<div class="wrapper-comp-settings is-active editor-with-buttons" id="settings-tab">
+  <ul class="list-input settings-list">
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+	<table>
+	  <tr>
+	    <h2>
+	      <th><strong>Reference Name</strong></th>
+	      <th><strong>Reference Type</strong></th>
+	      <th><strong>Reference Link</strong></th>
+	      <th><strong>Reference Status</strong></th>
+	      <!--th><strong>Reference Desc</strong></th-->
+	      <th><strong>Options</strong></th>
+	    </h2>
+	  </tr>
+	  {% for field in data %}
+	  <tr>
+	    <!-- Change id to class for dyanmic element -->
+	    <td>{{field.ref_name}}</td>
+	    <td>{{field.ref_type}}</td>
+	    <td style="word-break:break-all;"><a href="{{field.ref_link}}">{{field.ref_link}}</a></td>
+	    <td>{{field.ref_status}}</td>
+	    <!--td>${field.ref_desc}}</td-->
+	    <td>
+	      {% if field.id not in self.ref_ids %}
+	      <!-- TO DO Remove unwanted id -->
+	      <a data-refid="{{field.id}}" href="#" class="button action-primary save-button" id="add"><strong>Add</strong></a>&nbsp;&nbsp;
+	      {% else %}
+	      <a data-refid="{{field.id}}"  href="#" class="button action-primary remove-button" id="remove"><strong>Remove</strong></a>
+	      &nbsp;&nbsp;
+	      {% endif %}
+
+	  </tr>
+	  {% endfor %}
+	</table>
+
+      </div>
+    </li>
+  </ul>
+  <div class="xblock-actions">
+    <ul>
+      <li class="action-item">
+	<a href="#" class="button action-primary submit-button">Save</a>
+      </li>
+      <li class="action-item">
+	<a href="#" class="button action-primary cancel-button">Cancel</a>
+      </li>
+    </ul>
+  </div>
+</div>
