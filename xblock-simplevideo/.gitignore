@@ -1,7 +1,0 @@
-*.pyc
-*~
-*.swp
-*.swo
-xblock_simplevideo.egg-info/
-build/
-dist/

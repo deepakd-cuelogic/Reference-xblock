@@ -1,8 +1,0 @@
-referenceblock.py
-setup.py
-xblock_reference.egg-info/PKG-INFO
-xblock_reference.egg-info/SOURCES.txt
-xblock_reference.egg-info/dependency_links.txt
-xblock_reference.egg-info/entry_points.txt
-xblock_reference.egg-info/requires.txt
-xblock_reference.egg-info/top_level.txt

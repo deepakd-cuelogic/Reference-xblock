@@ -1,3 +1,0 @@
-function ReferenceInfoBlock(runtime, element) {
-
-}

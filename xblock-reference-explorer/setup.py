@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='xblock-reference',
+    name='xblock-reference-explorer',
     version='0.1',
     description='ReferenceInfoBlock XBlock Tutorial Sample',
     py_modules=['referenceblock'],

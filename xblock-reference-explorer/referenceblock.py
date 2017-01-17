@@ -30,15 +30,16 @@ class ReferenceInfoBlock(XBlock):
         Returns a `Fragment` object specifying the HTML, CSS, and JavaScript
         to display.
         """
-        data = []
+        #data = []
+        '''
         if self.ref_ids:
             for id in self.ref_ids:
                 # TO DO Use select in through ORM
                 reference = ReferenceInfo.objects.get(id=id)
                 data.append(reference)
-
-        references = ReferenceInfo.objects.filter(id__in=ref_ids)
-        print("Refernce by in query!!!", references)
+        '''
+        data = ReferenceInfo.objects.filter(id__in=self.ref_ids)
+        #print("Refernce by in query!!!", references)
 
         frag = Fragment()
         frag.add_content(
